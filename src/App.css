@@ -1,38 +1,37 @@
 .App {
-  text-align: center;
+  position: relative;
+  overflow-x: clip;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App>:nth-child(1){
+  background-image: linear-gradient(rgb(0 0 0 / 80%),rgba(0 0 0 / 70%)),url(https://images.unsplash.com/photo-1596178060810-72f53ce9a65c?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDR8fHJlc29ydHxlbnwwfHwwfHx8MA%3D%3D);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  animation: change 20s infinite ease-in-out;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@keyframes change{
+  0%{
+      background-image: linear-gradient(rgb(0 0 0 / 80%),rgba(0 0 0 / 75%)),url(https://images.unsplash.com/photo-1468824357306-a439d58ccb1c?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDZ8fHJlc29ydHxlbnwwfHwwfHx8MA%3D%3D);
+  }
+  20%{
+      background-image:linear-gradient(rgb(0 0 0 / 80%),rgba(0 0 0 / 75%)),url(https://images.unsplash.com/photo-1615880480595-f5f9b4fb530e?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTR8fHJlc29ydHxlbnwwfHwwfHx8MA%3D%3D);
+  }
+  40%{
+      background-image: linear-gradient(rgb(0 0 0 / 80%),rgba(0 0 0 / 75%)),url(https://images.unsplash.com/photo-1561501878-aabd62634533?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzF8fHJlc29ydHxlbnwwfHwwfHx8MA%3D%3D);
+  }
+  60%{
+      background-image: linear-gradient(rgb(0 0 0 / 80%),rgba(0 0 0 / 75%)),url(https://images.unsplash.com/photo-1557034362-d9b6856e4cab?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODh8fHJlc29ydHxlbnwwfHwwfHx8MA%3D%3D);
+  }
+  80%{
+      background-image: linear-gradient(rgb(0 0 0 / 70%),rgba(0 0 0 / 70%)),url(https://images.unsplash.com/photo-1502208327471-d5dde4d78995?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA4fHxyZXNvcnR8ZW58MHx8MHx8fDA%3D);
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.white-gradient{
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  right: 0;
+  background: rgba(196, 160, 178, 0.522);
+  filter: blur(100px);
+  border-radius: 100px;
 }

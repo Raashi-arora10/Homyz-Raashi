@@ -1,0 +1,192 @@
+.backs1{
+  background-image: linear-gradient(rgb(0 0 0 / 80%),rgba(0 0 0 / 70%)), url(https://images.unsplash.com/photo-1596178060810-72f53ce9a65c?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDR8fHJlc29ydHxlbnwwfHwwfHx8MA%3D%3D);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  animation: change 20s infinite ease-in-out;
+}
+.backs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+    margin: 0; 
+}
+
+.details-container {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center;
+    margin-top: -80px;
+}
+  .details-loading {
+    text-align: center;
+    padding: 20px;
+    color: white;
+  }
+  
+  .details-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .details-price {
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  
+  .details-detail {
+    margin-bottom: 20px;
+  }
+  
+  .details-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  .pr{
+    font-size: 20px;
+  }
+  .star-rating {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .star {
+    color: #ffc107; 
+    margin-right: 5px;
+    margin-top: -92px; 
+    margin-bottom: 30px;
+  }
+  .services-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+  }
+  
+  .service-item {
+    width: calc(50% - 8px);
+    margin-bottom: 20px;
+    display: flex;
+    padding: 0 100px;
+    box-sizing: border-box;
+    align-items: center;
+  }
+  
+  .service-icon {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  .heads{
+    text-align: center;
+    margin-top: 15px;
+  }
+  .service-name {
+    font-size: 16px;
+  }
+  
+  .services-hr {
+    margin-top: 30px;
+    border: 0.5px solid #ccc;
+    margin-left: 5%;
+    width: 90%;
+  }
+  .rooms {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .pppp {
+    font-size: 30px;
+    margin: 28px;
+    color: rgb(75, 22, 59);
+    text-align: center;
+  }
+  
+  .room-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 20px;
+  }
+  
+  .room-item {
+    flex: 1; /* Each room item takes up equal width */
+    flex-wrap: 1;
+    max-width: 300px; /* Set a maximum width if needed */
+    border-radius: 16px;
+    margin: 15px;
+    padding: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out;
+    width: 80%;
+  }
+  
+  .room-item:hover {
+    transform: scale(1.05); /* Add a slight scale effect on hover */
+  }
+  
+  .room-item img {
+    width: 100%;
+    max-width: 500px;
+    max-height: 300px;
+    padding: 15px;
+    object-fit: cover;
+    border-radius: 16px 16px 0 0;
+  }
+  
+  .room-details {
+    padding: 20px;
+    text-align: left; /* Align text to the left */
+  }
+  
+  .room-type {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .rate {
+    font-size: 16px;
+    color: #555;
+    font-weight: bold;
+  }
+  
+  .room-price {
+    font-size: 24px;
+    color: #022142;
+    font-weight: bolder;
+    margin-top: 10px;
+  }
+  .bbt{
+    padding: 5px 20px;
+    border-radius: 35px;
+    margin-top: 3px;
+  }
+  @media (max-width: 1200px) {
+    .room-item {
+      flex: 3 3 100%; /* Each room item takes up full width on mobile view */
+      max-width: none; /* Remove the maximum width on mobile view */
+    }
+  }
+  @media (max-width: 768px) {
+    .room-item {
+      flex: 1 1 100%; /* Each room item takes up full width on mobile view */
+      max-width: none; /* Remove the maximum width on mobile view */
+    }
+    .details-image {
+      margin-top: 27px;
+      margin-bottom: 20px;
+    }
+  }

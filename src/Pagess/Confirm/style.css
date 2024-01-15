@@ -1,0 +1,127 @@
+/* style.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+
+}
+
+.header {
+  background-color: #211a20;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.confirm-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+  gap: 20px; /* Add some spacing between columns */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 100%; /* Set a maximum width if needed */
+  margin: 0 auto; /* Center the container */ 
+}
+
+.hotel {
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.confirm-container p {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+.confirm-container img {
+  width: 100%; /* Make the image take up 100% of its container */
+  border-radius: 8px; /* Maintain border-radius for the image */
+  max-width: 100%;  /* Make sure the image takes up at most half of the container */
+}
+.details-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.star {
+  color: #ffc107;
+  font-size: 18px;
+}
+
+.check-in-out,
+.charges-summary {
+  flex-basis: 45%; /* Set a maximum width for both sections */
+}
+.check-in-out label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.check-in-out input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.number-of-rooms label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.number-of-rooms input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.charges-summary {
+  margin-top: 20px;
+}
+
+.charges-summary p {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.hr-divider {
+  border-top: 1px solid #ccc;
+  margin: 10px 0;
+}
+
+/* Add more styles as needed */
+@media (max-width: 768px) {
+  .confirm-container {
+    grid-template-columns: 1fr; /* Single column for smaller screens */
+    gap: 10px; /* Adjust spacing for smaller screens */
+    padding: 10px;
+  }
+
+  .details-section {
+    margin-top: 20px; /* Add some spacing between image and details on mobile view */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .check-in-out,
+  .charges-summary {
+    flex-basis: 100%; /* Full width for both sections on mobile view */
+  }
+}
