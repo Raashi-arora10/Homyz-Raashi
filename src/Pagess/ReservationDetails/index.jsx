@@ -11,9 +11,12 @@ const ReservationDetails = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
+  // eslint-disable-next-line no-unused-vars
   const [confirm, setConfirm] = useState(null);
-  const navigate = useNavigate();
+  // ...
+  // eslint-disable-next-line no-unused-vars
   const [fetchedData, setFetchedData] = useState([]);
+  const navigate = useNavigate();
   const [errors, setErrors] = useState({
     name: '',
     email: '',
