@@ -2,6 +2,7 @@ const User = require('../models/user');
 const PaymentDetails = require('../models/PaymentDetails');
 const Hotel = require('../models/hotel');
 const ConfirmData = require('../models/Confirm');
+// const jwt = require("jsonwebtoken");
 
 const signup = async (req, res) => {
   try {
@@ -17,6 +18,15 @@ const signup = async (req, res) => {
     }
     const newUser = new User({ username, email, password, confirmPassword });
     await newUser.save();
+
+    // const data = {
+    //   newUser:{
+    //     id: newUser.id
+    //   }
+    // }
+
+    // const token = jwt.sign(data, 'secret_token');
+    // res.json({success: true, token})
 
     res.json({ message: 'User registered successfully' });
   } catch (error) {
@@ -35,6 +45,16 @@ const login = async (req, res) => {
     }
 
     if (user && (await user.comparePassword(password))) {
+      // const data = {
+      //   newUser:{
+      //     id: newUser.id
+      //   }
+      // }
+  
+      // const token = jwt.sign(data, 'secret_token');
+      // res.json({success: true, token});
+
+      
       res.json({ message: 'Login successful' });
     } else {
       res.status(401).json({ message: 'Wrong Password' });
@@ -85,7 +105,6 @@ const filterHotelsByPriceRange = async (req, res) => {
     if (isNaN(minPrice) || isNaN(maxPrice) || minPrice < -1 || maxPrice < -1 || minPrice > maxPrice) {
       return res.status(400).json({ error: 'Invalid price range' });
     }
-
     console.log('Valid price range. Filtering hotels...');
 
     const filteredHotels = await Hotel.find({
