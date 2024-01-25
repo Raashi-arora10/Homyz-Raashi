@@ -250,7 +250,7 @@ const Login = () =>{
         {/* CONTENT SECTION */}
         <div className="row content-row">
           {/* SIGN IN CONTENT */}
-          <div className={"col align-items-center flex-col ${isSignIn ? 'active' : ''}"}>
+          <div className={`col align-items-center flex-col ${isSignIn ? 'active' : ''}`}>
             <div className="text sign-in">
               <h2>Welcome to <br />Homyz</h2>
             </div>
@@ -258,7 +258,7 @@ const Login = () =>{
           </div>
           {/* END SIGN IN CONTENT */}
           {/* SIGN UP CONTENT */}
-          <div className={"col align-items-center flex-col ${isSignIn ? 'active' : ''}"}>
+          <div className={`col align-items-center flex-col ${isSignIn ? 'active' : ''}`}>
             <div className="img sign-up"></div>
             <div className="text sign-up">
               <h2>Join with us</h2>
