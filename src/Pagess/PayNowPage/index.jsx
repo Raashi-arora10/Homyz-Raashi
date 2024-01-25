@@ -4,11 +4,7 @@ import QRCode from 'react-qr-code';
 import './style.css';
 import Header2 from '../../components/Home/Header2';
 
-const API_URL = 'http://localhost:3000/api';
-
 const PayNowPage = () => {
-  const { roomid } = useParams();
-  const [confirm, setConfirm] = useState(null);
   const location = useLocation();
 
   useEffect(() => {
