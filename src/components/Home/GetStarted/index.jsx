@@ -52,7 +52,7 @@ const Footer = () => {
             </div>
         </div>
         <div class="copyrigth">
-            <p>Copyright © Raashi Arora (Homyz).</p>
+            <p>Copyright © Raashi Arora(Homyz)</p>
         </div>
     </section>
   )
