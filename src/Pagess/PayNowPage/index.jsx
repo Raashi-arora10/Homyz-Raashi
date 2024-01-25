@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { useLocation, useParams } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import QRCode from 'react-qr-code';
 import './style.css';
 import Header2 from '../../components/Home/Header2';
